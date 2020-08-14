@@ -1,0 +1,38 @@
+/* Colors: British palette
+	blue: #2f3640;
+	yellow: #e1b12c;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica';
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 1rem;
+}
+
+.info {
+	width: 80%;
+	margin: 0.5rem auto;
+	padding: 1rem 2rem;
+	background-color: #ddd;
+	border-radius: 10px;	
+}
+
+.info h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.example {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 2px dotted #aaa;
+}

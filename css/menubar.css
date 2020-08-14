@@ -1,0 +1,56 @@
+.menubar {
+	background-color: #2f3640;
+	text-align: center;
+}
+
+.menubar nav ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+.menubar nav ul li {
+	margin: 0.5rem;
+	padding: 1rem;
+}
+
+.menubar nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.active, .menubar nav ul li:hover {
+	font-weight: bold;
+}
+
+.submenu1 {
+	display: none;
+}
+
+.menubar nav ul li:hover .submenu1 {
+	display: block;
+	position: absolute;
+	background-color: #2f3640;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menubar nav ul li:hover .submenu1 ul {
+	display: block;
+	margin: 0.5rem;
+}
+
+.menubar nav ul li:hover .submenu1 ul li {
+	padding: 0.5rem;
+	font-weight: normal;
+	border-bottom: 1px dotted #cccccc;
+	background: transparent;
+	text-align: left;
+}
+
+.menubar nav ul li:hover .submenu1 ul li:last-child {
+	border-bottom: none;
+}
+
+.menubar nav ul li:hover .submenu1 ul li a:hover {
+	color: #e1b12c;
+}
