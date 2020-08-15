@@ -7,9 +7,9 @@ if(isset($_POST)) {
     init_sessions();
 
     $errors = [];
-    $username = isset($_POST['username']) ? $_POST['username'] : '';
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
-    $password = isset($_POST['password']) ? $_POST['password'] : '';
+    $username = isset($_POST['username']) ? mysqli_real_escape_string($db, $_POST['username']) : '';
+    $email = isset($_POST['email']) ? mysqli_real_escape_string($db, $_POST['email']) : '';
+    $password = isset($_POST['password']) ? mysqli_real_escape_string($db, $_POST['password']) : '';
     
     // data validation
     if(empty($username) || is_numeric($username))

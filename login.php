@@ -11,7 +11,7 @@
     <div class="container">
         <div class="login">
             <h2>Inicia sesión</h2>
-            <form action="manage_login.php">
+            <form action="manage_login.php" method="POST">
                 <div class="field-group">
                     <label for="username">Nombre de usuario o correo</label>
                     <input type="text" name="username" />
