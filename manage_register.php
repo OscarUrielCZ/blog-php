@@ -13,11 +13,11 @@ if(isset($_POST)) {
     
     // data validation
     if(empty($username) || is_numeric($username))
-        $errors['username'] = true;
+        $errors['username'] = 'El nombre de usuario no es válido';
     if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL))
-        $errors['email'] = true;
+        $errors['email'] = 'El email no es válido';
     if(empty($password))
-        $errors['password'] = true;
+        $errors['password'] = 'La contraseña está vacía';
 
     if(count($errors) == 0) {
         // password cipher
@@ -34,16 +34,18 @@ if(isset($_POST)) {
         } else {
             $sql_error = mysqli_error($db);
             if($sql_error == "Duplicate entry '$email' for key 'users.email'")
-                $errors['sql'] = 'El email ya está registrado previamente';
+                $errors['email'] = 'El email ya está previamente registrado';
             else if($sql_error == "Duplicate entry '$username' for key 'users.username'")
-                $errors['sql'] = 'El nombre de usuario ya está registrado previamente';
+                $errors['username'] = 'El nombre de usuario ya está previamente registrado';
             $_SESSION['errors'] = $errors;
         }
     } else {
-        $_SESSION['errors'] = errors;
+        $_SESSION['errors'] = $errors;
     }    
 }
 
+// var_dump($_SESSION);
+$_SESSION['data'] = array('username' => $username, 'email' => $email);
 header('Location:register.php');
 
 ?>

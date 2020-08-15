@@ -78,3 +78,15 @@ body {
 	margin: auto;
 	padding: 1rem;
 }
+
+.alert {
+	display: block;
+	width: 100%;
+	margin-left: 10px;
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+
+.alert-error {
+	color: darkred;
+}
