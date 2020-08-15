@@ -1,3 +1,17 @@
+/* Colors: British palette
+	blue: #2f3640;
+	yellow: #e1b12c;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica';
+}
+
 .menubar {
 	background-color: #2f3640;
 	text-align: center;
@@ -53,4 +67,14 @@
 
 .menubar nav ul li:hover .submenu1 ul li a:hover {
 	color: #e1b12c;
+}
+
+#logo h1 {
+	color: white;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 1rem;
 }

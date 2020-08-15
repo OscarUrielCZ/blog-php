@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/menubar.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 	<title>Aprendiendo PHP | Inicio</title>
 </head>
 <body>
-	<?php
-		require_once 'header.php';
-	?>
+	<?php require_once 'includes/header.php'; ?>
 	<div class="container">
 		<div id="title">
 			<h2>Aprendiendo PHP</h2>
