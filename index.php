@@ -8,9 +8,41 @@
 <body>
 	<?php require_once 'includes/header.php'; ?>
 	<div class="container">
-		<div id="title">
-			<h2>Aprendiendo PHP</h2>
-			<p>En esta paǵina hay información sobre lo aprendido con PHP en el <a href="https://www.udemy.com/course/master-en-php-sql-poo-mvc-laravel-symfony-4-wordpress/">curso de PHP</a></p>
+		<div id="principal-image"></div>
+		<div class="content">
+			<div class="group">
+				<h3 class="group-title">Tendencias</h3>
+				<div class="group-articles">
+					<article class="article">
+						<div class="article-image"></div>
+						<div class="article-content">
+							<h3 class="article-title">Productos más vendidos</h3>
+							<p>Ve los productos más vendidos de la semana <a href="#">aquí</a></p>
+						</div>
+					</article>
+					<article class="article">
+						<div class="article-image"></div>
+						<div class="article-content">
+							<h3 class="article-title">Productos más vendidos</h3>
+							<p>Ve los productos más vendidos de la semana <a href="#">aquí</a></p>
+						</div>
+					</article>
+					<article class="article">
+						<div class="article-image"></div>
+						<div class="article-content">
+							<h3 class="article-title">Productos más vendidos</h3>
+							<p>Ve los productos más vendidos de la semana <a href="#">aquí</a></p>
+						</div>
+					</article>
+					<article class="article">
+						<div class="article-image"></div>
+						<div class="article-content">
+							<h3 class="article-title">Productos más vendidos</h3>
+							<p>Ve los productos más vendidos de la semana <a href="#">aquí</a></p>
+						</div>
+					</article>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -1,12 +1,37 @@
-#title {
-	width: 100%;
-	margin: 1rem 0;
-	padding: 1rem;
-	text-align: center;
-	background-color: #ddd;
-	border-radius: 10px;
+#principal-image {
+	height: 70vh;
+	background-color: #cccccc;
 }
 
-#title h2 {
-	margin-bottom: 1rem;
+.content {
+	background-color: #efefef;
+}
+
+.group {
+	padding: 10px;
+}
+
+.group-title {
+	font-size: 1.5rem;
+}
+
+.group-articles {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.article {
+	display: inline-block;
+	width: 21%;
+	margin: 10px 8px;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 7px;
+}
+
+.article-image {
+	height: 170px;
+	margin: 10px 5px;
+	border: 1px solid #cccccc;
 }

@@ -11,6 +11,7 @@
     <?php 
         require_once 'includes/helpers.php';
         init_sessions();
+        require_once 'includes/header.php';
     ?>
     <div class="container">
         <div class="login">

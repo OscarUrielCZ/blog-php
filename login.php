@@ -8,6 +8,7 @@
     <title>Marketplace | Ingresar</title>
 </head>
 <body>
+    <?php require_once('includes/header.php'); ?>
     <div class="container">
         <div class="login">
             <h2>Inicia sesión</h2>

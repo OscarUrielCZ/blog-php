@@ -1,6 +1,6 @@
 <header>
 	<div id="logo">
-		<h1>Marketplace</h1>
+		<a href="index.php"><h1>Marketplace</h1></a>
 	</div>
 	<div class="clearfix"></div>
 	<nav class="menubar">
