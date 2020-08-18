@@ -12,27 +12,43 @@ body {
 	font-family: 'Helvetica';
 }
 
+.clearfix {
+	clear: both;
+	float: none;
+}
+
+#logo {
+	width: 80%;
+	margin: 10px auto;
+}
+
+#logo h1 {
+	float: left;
+}
+
 .menubar {
+	clear: both;
+	margin-top: 10px;
 	background-color: #2f3640;
 	text-align: center;
 }
 
-.menubar nav ul {
+.menubar ul {
 	display: inline-flex;
 	list-style: none;
 }
 
-.menubar nav ul li {
+.menubar ul li {
 	margin: 0.5rem;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
-.menubar nav ul li a {
+.menubar ul li a {
 	color: white;
 	text-decoration: none;
 }
 
-.active, .menubar nav ul li:hover {
+.active, .menubar ul li:hover {
 	font-weight: bold;
 }
 
@@ -40,7 +56,7 @@ body {
 	display: none;
 }
 
-.menubar nav ul li:hover .submenu1 {
+.menubar ul li:hover .submenu1 {
 	display: block;
 	position: absolute;
 	background-color: #2f3640;
@@ -48,12 +64,12 @@ body {
 	margin-left: -15px;
 }
 
-.menubar nav ul li:hover .submenu1 ul {
+.menubar ul li:hover .submenu1 ul {
 	display: block;
 	margin: 0.5rem;
 }
 
-.menubar nav ul li:hover .submenu1 ul li {
+.menubar ul li:hover .submenu1 ul li {
 	padding: 0.5rem;
 	font-weight: normal;
 	border-bottom: 1px dotted #cccccc;
@@ -61,16 +77,12 @@ body {
 	text-align: left;
 }
 
-.menubar nav ul li:hover .submenu1 ul li:last-child {
+.menubar ul li:hover .submenu1 ul li:last-child {
 	border-bottom: none;
 }
 
-.menubar nav ul li:hover .submenu1 ul li a:hover {
+.menubar ul li:hover .submenu1 ul li a:hover {
 	color: #e1b12c;
-}
-
-#logo h1 {
-	color: white;
 }
 
 .container {

@@ -1,12 +1,13 @@
-<header class="menubar">
+<header>
 	<div id="logo">
 		<h1>Marketplace</h1>
 	</div>
-	<nav>
+	<div class="clearfix"></div>
+	<nav class="menubar">
 		<ul>
 			<li class="active"><a href="index.php">Inicio</a></li>
 			<li>
-				<a href="#">Básicos</a>
+				<a href="#">Básicos &#9660;</a>
 				<div class="submenu1">
 					<ul>
 						<li><a href="syntax.php">Sintaxis</a></li>
