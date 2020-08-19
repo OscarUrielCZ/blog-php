@@ -62,7 +62,7 @@ body {
 	display: block;
 	position: absolute;
 	background-color: #2f3640;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-left: -15px;
 }
 
@@ -74,7 +74,7 @@ body {
 .menubar ul li:hover .submenu1 ul li {
 	padding: 0.5rem;
 	font-weight: normal;
-	border-bottom: 1px dotted #cccccc;
+	border-bottom: 1px solid #cccccc;
 	background: transparent;
 	text-align: left;
 }
