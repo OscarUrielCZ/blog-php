@@ -10,8 +10,8 @@
 <body>
 	<?php 
 		require_once 'includes/helpers.php';
-		init_sessions();
 		require_once 'includes/header.php';
+		init_sessions();
 	?>
 	<div class="container">
 		<div class="login-container">
@@ -21,26 +21,20 @@
 					<div class="field-group">
 						<label for="username">Nombre de usuario</label>
 						<?php if(isset($_SESSION['data']) && isset($_SESSION['data']['username'])): ?>
-							<?php
-								$username = $_SESSION['data']['username'];
-								echo "<input type='text' name='username' placeholder='Escribe tu nombre de usuario' value='$username' required>";
-							?>
+							<input type="text" name="username" placeholder="Escribe tu nombre de usuario" value="<?=$_SESSION['data']['username']?>" required>
 						<?php else: ?>
-								<input type="text" name="username" placeholder="Escribe tu nombre de usuario" required>
+							<input type="text" name="username" placeholder="Escribe tu nombre de usuario" required>
 						<?php endif; ?>
-						<?php echo show_error('username') ?>
+						<?= show_error('username') ?>
 					</div>
 					<div class="field-group">
 						<label for="email">Correo electrónico</label>
 						<?php if(isset($_SESSION['data']) && isset($_SESSION['data']['email'])): ?>
-							<?php
-								$email = $_SESSION['data']['email'];
-								echo "<input type='email' name='email' placeholder='example@exmaple.com' value='$email' required>";
-							?>
+							<input type="email" name="email" placeholder="example@exmaple.com" value="<?=$_SESSION['data']['email']?>" required>
 						<?php else: ?>
 							<input type="email" name="email" placeholder="example@exmaple.com" required>
 						<?php endif; ?>
-						<?php echo show_error('email') ?>
+						<?= show_error('email') ?>
 					</div>
 					<div class="field-group">
 						<labelfor="password">Contraseña</label>

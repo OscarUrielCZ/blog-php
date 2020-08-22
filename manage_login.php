@@ -7,8 +7,8 @@ if($_POST) {
     init_sessions();
 
     $errors = [];
-    $username = isset($_POST['username']) ? mysqli_real_escape_string($db, $_POST['username']) : '';
-    $password = isset($_POST['password']) ? mysqli_real_escape_string($db, $_POST['password']) : '';
+    $username = isset($_POST['username']) ? mysqli_real_escape_string($db, trim($_POST['username'])) : '';
+    $password = isset($_POST['password']) ? mysqli_real_escape_string($db, trim($_POST['password'])) : '';
 
     // data validation
     if(empty($username) || is_numeric($username))
@@ -16,7 +16,24 @@ if($_POST) {
     if(empty($password))
         $errors['password'] = 'La contraseña está vacía';
 
-    
+    if(empty($errors)) {
+        $sql = "SELECT * FROM users WHERE username = '$username';";
+        $query_result = mysqli_query($db, $sql);
+
+        if(mysqli_num_rows($query_result) == 1) {
+            $user = mysqli_fetch_assoc($query_result);   
+            if(password_verify($password, $user['password'])) {
+                $_SESSION['user'] = $user;
+                header('Location:index.php');
+            } else {
+                $errors['password'] = 'Contraseña incorrecta';
+            }
+        }
+    }
+
+    $_SESSION['erroros'] = $errors;
+    $_SESSION['data'] = ['username' => $username];
+    header('Location:login.php');
 }
 
 ?>

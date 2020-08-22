@@ -8,7 +8,11 @@
 	<title>Marketplace | Ingresar</title>
 </head>
 <body>
-	<?php require_once('includes/header.php'); ?>
+	<?php
+		require_once('includes/header.php');
+		require_once('includes/helpers.php');
+		
+	?>
 	<div class="container">
 		<div class="login-container">
 			<div class="login">
@@ -16,6 +20,7 @@
 				<form action="manage_login.php" method="POST">
 					<div class="field-group">
 						<label for="username">Nombre de usuario o correo</label>
+						<?php if(): ?>
 						<input type="text" name="username" />
 					</div>
 					<div class="field-group">
