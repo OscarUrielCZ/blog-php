@@ -19,4 +19,9 @@ function delete_session($field) {
     unset($_SESSION[$field]);
 }
 
+function check_logedin() {
+    // return isset($_SESSION['user']);
+    return "Hola";
+}
+
 ?>
